@@ -62,7 +62,7 @@ Started September 8, 2026 for Agents for Humans. Built with AI coding assistance
 
 ## Links and eligibility — complete before submission
 
-- Public source repository: pending approval and publication.
+- Public source repository: [carrerasdarren-cell/commitment-desk](https://github.com/carrerasdarren-cell/commitment-desk) — published under MIT.
 - Public YouTube or Vimeo demo, at most five minutes: pending recording and publication.
 - Architecture: `architecture.svg` / `architecture.png` in this folder.
 - Judge testing access (website, functioning demo or test build): pending; the current hosted app is owner-only.
