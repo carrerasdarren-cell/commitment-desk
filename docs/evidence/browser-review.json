@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-09-11T00:37:00.422515+00:00",
+  "deployed_application_commit": "4422b3dc49de0a50906690d3cdecdd331013e4b0",
+  "provider": "bedrock \u00b7 amazon.nova-lite-v1:0",
+  "review_date": "2026-09-08",
+  "input": "Synthetic Northline Studio example",
+  "observed": {
+    "initial_example_explicitly_labeled": true,
+    "live_analysis_completed": true,
+    "supported_items": 5,
+    "attention_states": [
+      "overdue",
+      "blocked",
+      "clarify",
+      "upcoming",
+      "done"
+    ],
+    "rejected_extractions": 0,
+    "successful_read_updates_calls": 3,
+    "successful_structured_output_calls": 3,
+    "kickoff_deadline_remained_unconfirmed": true,
+    "later_checklist_completion_suppressed_draft": true,
+    "followup_edit_visible": true,
+    "approval_visible": true,
+    "export_confirmation_visible": true
+  },
+  "download_verification": {
+    "browser_event": "timed out after 10 seconds",
+    "file_delivery": "not independently verified"
+  },
+  "demo": {
+    "status": "private preview; not publicly uploaded",
+    "duration_seconds": 184.177,
+    "source": "actual browser frames with edited timing and generic synthetic narration",
+    "capture_frames": 45,
+    "video_decode": "passed"
+  },
+  "limits": [
+    "Bounded synthetic workflow, not a general accuracy benchmark.",
+    "Export confirmation is not proof of file delivery.",
+    "This does not establish access for judges or a competition submission."
+  ]
+}

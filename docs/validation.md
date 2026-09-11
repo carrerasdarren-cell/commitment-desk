@@ -20,7 +20,7 @@ The hosted check finished at `2026-09-10T23:08:25.791Z` against deployed applica
 - TypeScript and authored-code lint passed.
 - Dependency audit reported zero known vulnerabilities after the Cloudflare toolchain patch update.
 - Local application returned HTTP 200; the actual Worker analysis endpoint passed the same full sample assertions.
-- No browser interaction or visual QA was performed on the app.
+- The bounded live browser flow was subsequently checked as described below; downloaded-file delivery remains unverified.
 - Runtime used for these checks: Node 26.0.0. Other supported Node versions have not been independently tested.
 
 ## Changes required for Nova
@@ -36,3 +36,9 @@ Earlier Ollama integration attempts did not pass. The first Nova sample exposed 
 A clean installation of the prepared source release passed all 17 tests, typecheck, lint and the production build on Node 26.0.0. The dependency audit reported zero known vulnerabilities. Its local development page and configuration endpoint returned HTTP 200 at the Local URL printed by Vinext (localhost); the page rendered the product name and Synthetic example label. This was an HTTP check, not a browser interaction check. No model call was made for the source-release check.
 
 The release preserves optional empty binding configuration and replaces only its copy of the Sites project identifier with null. The working deployment retains its real configuration. Source credentials, environment files, logs, dependencies, build output and Git history are excluded. Build warnings about a Node deprecation and static route classification were non-blocking. See the separately packaged source-release-check.json for the release checksum and provenance.
+
+## Recorded browser review
+
+The live interface was exercised with the synthetic sample: the example label changed to a live Bedrock/Nova result; all five attention states appeared; the kickoff stayed undated; and the later S-02 checklist completion suppressed its draft. Editing and approving the launch budget follow-up were visible. Run activity showed three successful read tools and three successful structured-output tools, with zero rejected extractions.
+
+The export button displayed a confirmation, but the browser download event timed out and no file was found in the expected download folders. Downloaded-file delivery remains unverified. This limitation is labeled in the private 3:04 narrated demo preview. The preview uses actual browser frames with edited timing and generic synthetic narration; its full video/audio decode passed. No native Codex interface was captured. See evidence/browser-review.json. The video has not been publicly uploaded.

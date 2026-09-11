@@ -42,7 +42,7 @@ The first Nova sample also exposed a practical extraction issue: headers could b
 
 The same full synthetic scenario passed through the Node agent, local Worker route, and privately published Worker route. Each saved run retained nine evidence records, covered the five expected attention states, rejected zero events, and recorded successful read and structured-output tools for all three sources. Seventeen domain, schema and adapter tests passed.
 
-These are bounded checks of this scenario, not a general accuracy benchmark. Browser interaction and the exported download still need direct verification before the final demo.
+These are bounded checks of this scenario, not a general accuracy benchmark. The live browser review, draft editing and approval are now recorded. Export confirmation was visible, but actual downloaded-file delivery still needs independent verification.
 
 ## What we learned
 
@@ -63,7 +63,7 @@ Started September 8, 2026 for Agents for Humans. Built with AI coding assistance
 ## Links and eligibility — complete before submission
 
 - Public source repository: [carrerasdarren-cell/commitment-desk](https://github.com/carrerasdarren-cell/commitment-desk) — published under MIT.
-- Public YouTube or Vimeo demo, at most five minutes: pending recording and publication.
+- Public YouTube or Vimeo demo, at most five minutes: private 3:04 preview recorded; public upload pending. Export file delivery remains unverified.
 - Architecture: `architecture.svg` / `architecture.png` in this folder.
 - Judge testing access (website, functioning demo or test build): pending; the current hosted app is owner-only.
 - AWS Builder ID email and entrant registration: verify with Darren; the AWS console account alone does not establish this.
