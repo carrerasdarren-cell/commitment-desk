@@ -20,12 +20,19 @@ import { exampleReport, sampleInput } from '@/lib/sample';
 import { labels, exportMarkdown, type Report } from '@/lib/domain';
 export default function Desk() {
   const [liveAvailable, setLiveAvailable] = useState<boolean | undefined>();
+  const [accessRequired, setAccessRequired] = useState(false);
+  const [reviewCode, setReviewCode] = useState('');
   useEffect(() => {
     fetch('/api/analyze')
       .then((r) => r.json())
-      .then((data) =>
-        setLiveAvailable((data as { liveAvailable: boolean }).liveAvailable),
-      )
+      .then((data) => {
+        const availability = data as {
+          liveAvailable: boolean;
+          accessRequired: boolean;
+        };
+        setLiveAvailable(availability.liveAvailable);
+        setAccessRequired(availability.accessRequired);
+      })
       .catch(() => setLiveAvailable(false));
   }, []);
   const [report, setReport] = useState<Report>(exampleReport);
@@ -50,7 +57,10 @@ export default function Desk() {
     try {
       const response = await fetch('/api/analyze', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          ...(accessRequired ? { 'X-Review-Code': reviewCode } : {}),
+        },
         body: JSON.stringify({ input, asOf }),
       });
       const data = (await response.json()) as Report & { error?: string };
@@ -161,11 +171,7 @@ export default function Desk() {
           <TabsTrigger value="updates">Source updates</TabsTrigger>
           <TabsTrigger value="activity">Run activity</TabsTrigger>
         </TabsList>
-        {notice && (
-          <output className="notice">
-            {notice}
-          </output>
-        )}
+        {notice && <output className="notice">{notice}</output>}
         <TabsContent value="review">
           <div className="review-grid">
             <section className="commitment-list" aria-label="Commitments">
@@ -286,9 +292,8 @@ export default function Desk() {
           <section className="input-panel">
             {liveAvailable === false && (
               <p className="notice">
-                This hosted preview supports the example, draft review and
-                export. Live analysis needs a connected model. The local project
-                includes the Strands agent.
+                Live reviews are currently unavailable. You can still explore
+                the example, review drafts and export a handoff.
               </p>
             )}
             <div className="input-heading">
@@ -311,6 +316,25 @@ export default function Desk() {
                 Load example
               </Button>
             </div>
+            {accessRequired && (
+              <div>
+                <label htmlFor="review-code">Judge access code</label>
+                <Input
+                  id="review-code"
+                  type="password"
+                  autoComplete="off"
+                  maxLength={256}
+                  value={reviewCode}
+                  onChange={(e) => setReviewCode(e.target.value)}
+                  aria-describedby="review-code-help"
+                />
+                <p id="review-code-help" className="notice">
+                  Use the code in the private testing instructions. Live reviews
+                  share a limited allowance; the example needs no code. The code
+                  stays in this tab until you refresh or close it.
+                </p>
+              </div>
+            )}
             <label htmlFor="as-of">Review date</label>
             <Input
               id="as-of"
@@ -333,7 +357,12 @@ export default function Desk() {
               </p>
               <Button
                 onClick={analyze}
-                disabled={pending || !input.trim() || liveAvailable !== true}
+                disabled={
+                  pending ||
+                  !input.trim() ||
+                  liveAvailable !== true ||
+                  (accessRequired && !reviewCode)
+                }
               >
                 {pending ? (
                   <LoaderCircle size={16} className="spin" />

@@ -42,7 +42,7 @@ The first Nova sample also exposed a practical extraction issue: headers could b
 
 ## Accomplishments we are proud of
 
-The same full synthetic scenario passed through the Node agent, local Worker route, and privately published Worker route. Each saved run retained nine evidence records, covered the five expected attention states, rejected zero events, and recorded successful read and structured-output tools for all three sources. Seventeen domain, schema and adapter tests passed.
+The same full synthetic scenario passed through the Node agent, local Worker route, and privately published Worker route. Each saved run retained nine evidence records, covered the five expected attention states, rejected zero events, and recorded successful read and structured-output tools for all three sources. Twenty-nine domain, schema, adapter and judge admission tests passed.
 
 These are bounded checks of this scenario, not a general accuracy benchmark. The live browser review, draft editing and approval are now recorded. A later user-assisted live Markdown download was independently checked: all five commitments and nine source quotes were retained, with exactly one approved draft matching the edited Maya message. The later download and file inspection are separate from the recorded footage.
 
@@ -52,7 +52,7 @@ Agent interpretation and application rules do different jobs. A model can organi
 
 ## What's next
 
-Validate the workflow with project managers using synthetic or permissioned examples. Measure incorrect reminders and unresolved details before making time-saving claims. Expand the evaluation set, improve task matching across differently worded updates, and add appropriate access and usage controls before wider deployment.
+Validate the workflow with project managers using synthetic or permissioned examples. Measure incorrect reminders and unresolved details before making time-saving claims. Expand the evaluation set, improve task matching across differently worded updates, and evaluate the protected judge access controls before wider deployment.
 
 ## Built with
 
@@ -68,7 +68,7 @@ Started September 8, 2026 for Agents for Humans. Built with AI coding assistance
 - Public demo: [Commitment Desk | Agents for Humans 2026](https://www.youtube.com/watch?v=zkPgiwAC5kY) — 3:04, published after approval. A later live export was independently verified.
 - Architecture: `architecture.svg` / `architecture.png` in this folder.
 - Judge testing access (website, functioning demo or test build): pending; the current hosted app is owner-only.
-- Devpost hackathon registration: verified; a project draft exists. AWS Builder ID email still needs verification; the AWS console account alone does not establish this.
+- Devpost hackathon registration: verified; a project draft exists. AWS Builder ID is verified and saved; the draft has reached 4/5 steps. Individual entrant and United States residence were confirmed by Darren.
 - Final entrant eligibility, project description and terms acceptance: Darren's review required.
 
 Deadline verified September 10: September 14, 2026, 5 p.m. Pacific / 8 p.m. Eastern. Keep the judge access route working through judging, which ends October 8. Sources: [official rules](https://agentsforhumans.devpost.com/rules), [FAQ](https://agentsforhumans.devpost.com/details/faqs).

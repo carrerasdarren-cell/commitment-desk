@@ -8,7 +8,9 @@ The standalone SVG and PNG are suitable for the entry upload. The hosted configu
 flowchart LR
   U[Person supplies dated updates] --> UI[React review interface]
   UI --> API[POST /api/analyze\nInput and origin validation]
-  API --> A[Strands Agent\nFive turns / four-minute limit]
+  API --> G[Judge code + expiry + allowance]
+  G <--> DB[(D1 counters and leases only)]
+  G --> A[Strands Agent\nFive turns / four-minute limit]
   A --> T[read_updates tool\nSupplied text only]
   T --> A
   A <--> M[Amazon Bedrock\nNova Lite 1.0 · us-east-2]
@@ -27,3 +29,5 @@ The language model interprets text; ordinary code applies dates, evidence checks
 Source text crosses a model trust boundary and is treated as untrusted data. Exact matching verifies that the passage exists, not that every extracted interpretation is true. The interface retains all accepted event evidence and surfaces rejected extractions. Model settings stay on the server.
 
 The configured provider is Amazon Nova Lite 1.0 in us-east-2. Server code uses native Converse tools, a Worker-compatible fetch transport, and Sites secrets for a dedicated identity scoped to this model. Exact-evidence validation returns tool feedback for bounded model correction before chronological reconciliation. AgentCore is not used.
+
+Protected judge mode adds a secret code, UTC expiry and one atomic D1 reservation before any model work. Only attempt counts and lease metadata are stored; project notes and access codes are not. Owner mode remains behind the Sites owner-only perimeter. The gate is implemented and locally checked, while a funded judge allowance and wider audience await approval. See `judge-access.md`.

@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-09-11T04:12:11.195741+00:00",
+  "environment": "local built Cloudflare Worker and local D1",
+  "provider": "gate-test-no-model deliberately rejects before SDK model construction; zero AWS calls",
+  "checks": [
+    {
+      "case": "availability",
+      "status": 200
+    },
+    {
+      "case": "wrong code",
+      "status": 401
+    },
+    {
+      "case": "malformed source",
+      "status": 400
+    },
+    {
+      "case": "admitted start 1; deliberately unsupported provider",
+      "status": 422
+    },
+    {
+      "case": "admitted start 2; deliberately unsupported provider",
+      "status": 422
+    },
+    {
+      "case": "third start denied by durable limit",
+      "status": 429
+    }
+  ],
+  "html": "200; product and synthetic example labels present",
+  "unit_tests": 29,
+  "source_state": "Admission code deployed from a4a23a36995421eb6573030482e1d4b886397935; this evidence record was written before that commit.",
+  "local_d1_readback": {
+    "used": 2,
+    "lease_until": 0
+  }
+}

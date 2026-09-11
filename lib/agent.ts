@@ -11,14 +11,8 @@ import { BedrockModel } from '@strands-agents/sdk/models/bedrock';
 import { FetchHttpHandler } from '@smithy/fetch-http-handler';
 import { z } from 'zod';
 import { sourceEventsSchema } from './extraction-schema.ts';
-import {
-  parseSources,
-  reconcile,
-  isDate,
-  type Report,
-  type Trace,
-  type Event,
-} from './domain.ts';
+import { reconcile, type Report, type Trace, type Event } from './domain.ts';
+import { validateReviewInput } from './review-input.ts';
 
 export async function analyzeUpdates(
   input: string,
@@ -26,8 +20,7 @@ export async function analyzeUpdates(
   requestSignal?: AbortSignal,
   diagnostic?: (message: unknown) => void,
 ): Promise<Report> {
-  if (!isDate(asOf)) throw new Error('Choose a valid review date.');
-  const sources = parseSources(input);
+  const sources = validateReviewInput(input, asOf);
   const trace: Trace[] = [];
   const started = new Map<string, number>();
   const provider = process.env.MODEL_PROVIDER ?? 'ollama';
@@ -85,8 +78,6 @@ export async function analyzeUpdates(
           },
           params: { max_tokens: 6000 },
         });
-  if (sources.length > 8)
-    throw new Error('Keep each review to eight source updates or fewer.');
   const allEvents: Event[] = [];
   const timeout = AbortSignal.timeout(240000);
   for (const currentSource of [...sources].sort((a, b) =>

@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-09-11T04:16:28.723885+00:00",
+  "deployed_application_commit": "a4a23a36995421eb6573030482e1d4b886397935",
+  "site_version": 3,
+  "deployment_id": "appgdep_6aa3800de2148191ae4f318b9fd72d9f",
+  "environment_revision": 2,
+  "deployed_at": "2026-09-11T04:14:18.072387+00:00",
+  "status": "succeeded",
+  "audience": "owner-only",
+  "live_access_mode": "owner",
+  "authenticated_availability": {
+    "status": 200,
+    "liveAvailable": true,
+    "accessRequired": false
+  },
+  "invalid_input_status": 400,
+  "d1_binding": "DB",
+  "d1_table": "judge_allowance",
+  "d1_rows": 0,
+  "judge_mode": "implemented and locally tested, not activated",
+  "new_AWS_calls": 0,
+  "limitations": [
+    "Production judge-mode admission and live inference still need the approved configuration and bounded check before audience changes.",
+    "The historical full Bedrock sample and video predate admission controls."
+  ]
+}
