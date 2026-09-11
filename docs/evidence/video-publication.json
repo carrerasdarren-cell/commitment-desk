@@ -1,0 +1,25 @@
+{
+  "verified_at": "2026-09-11T02:17:23.690171+00:00",
+  "url": "https://www.youtube.com/watch?v=zkPgiwAC5kY",
+  "title": "Commitment Desk | Agents for Humans 2026",
+  "channel": "Darren Carreras",
+  "visibility": "Public",
+  "user_approved_upload_and_publication": true,
+  "upload_checks": "YouTube reported Checks complete. No issues found.",
+  "publication_confirmation": "Video published",
+  "local_master_sha256": "b4b1663a7ccd42863074f150a08745c176ecf59338ed0a46c6012547114ca75b",
+  "local_master_duration_seconds": 184.177,
+  "watch_page_playback": {
+    "observed_playing": true,
+    "observed_duration_seconds": 184.201,
+    "paused_after_check": true
+  },
+  "synthetic_content_disclosed": true,
+  "made_for_kids": false,
+  "paid_promotion": false,
+  "limits": [
+    "Watch-page playback was checked in the signed-in browser; public visibility was selected and publication confirmed in YouTube Studio.",
+    "YouTube checks are not a guarantee against future claims.",
+    "This video publication does not submit the hackathon entry or grant judge access to the live application."
+  ]
+}

@@ -36,13 +36,15 @@ The privately hosted app runs on a Worker. The Bedrock client uses a fetch trans
 
 An exact quote is necessary evidence, but it does not prove the interpretation is right. We kept human review central and made unknown or conflicting details visible.
 
+A later live run correctly marked the checklist completed but omitted its historical deadline even though the source quote retained it. That remaining limitation reinforces the need for human review and a broader evaluation set.
+
 The first Nova sample also exposed a practical extraction issue: headers could be mistaken for deadlines or owners. Separating header metadata from model input and validating the structured output addressed that observed failure. The Worker deployment required an explicit fetch transport instead of the SDK's Node HTTP transport.
 
 ## Accomplishments we are proud of
 
 The same full synthetic scenario passed through the Node agent, local Worker route, and privately published Worker route. Each saved run retained nine evidence records, covered the five expected attention states, rejected zero events, and recorded successful read and structured-output tools for all three sources. Seventeen domain, schema and adapter tests passed.
 
-These are bounded checks of this scenario, not a general accuracy benchmark. The live browser review, draft editing and approval are now recorded. Export confirmation was visible, but actual downloaded-file delivery still needs independent verification.
+These are bounded checks of this scenario, not a general accuracy benchmark. The live browser review, draft editing and approval are now recorded. A later user-assisted live Markdown download was independently checked: all five commitments and nine source quotes were retained, with exactly one approved draft matching the edited Maya message. The later download and file inspection are separate from the recorded footage.
 
 ## What we learned
 
@@ -63,10 +65,10 @@ Started September 8, 2026 for Agents for Humans. Built with AI coding assistance
 ## Links and eligibility — complete before submission
 
 - Public source repository: [carrerasdarren-cell/commitment-desk](https://github.com/carrerasdarren-cell/commitment-desk) — published under MIT.
-- Public YouTube or Vimeo demo, at most five minutes: private 3:04 preview recorded; public upload pending. Export file delivery remains unverified.
+- Public demo: [Commitment Desk | Agents for Humans 2026](https://www.youtube.com/watch?v=zkPgiwAC5kY) — 3:04, published after approval. A later live export was independently verified.
 - Architecture: `architecture.svg` / `architecture.png` in this folder.
 - Judge testing access (website, functioning demo or test build): pending; the current hosted app is owner-only.
-- AWS Builder ID email and entrant registration: verify with Darren; the AWS console account alone does not establish this.
+- Devpost hackathon registration: verified; a project draft exists. AWS Builder ID email still needs verification; the AWS console account alone does not establish this.
 - Final entrant eligibility, project description and terms acceptance: Darren's review required.
 
 Deadline verified September 10: September 14, 2026, 5 p.m. Pacific / 8 p.m. Eastern. Keep the judge access route working through judging, which ends October 8. Sources: [official rules](https://agentsforhumans.devpost.com/rules), [FAQ](https://agentsforhumans.devpost.com/details/faqs).

@@ -33,11 +33,13 @@
     "same_run_as_recording": false
   },
   "demo": {
-    "status": "private preview; not publicly uploaded",
+    "status": "published on YouTube after user approval",
     "duration_seconds": 184.177,
     "source": "actual browser frames with edited timing and generic synthetic narration",
     "capture_frames": 45,
-    "video_decode": "passed"
+    "video_decode": "passed",
+    "public_url": "https://www.youtube.com/watch?v=zkPgiwAC5kY",
+    "publication_evidence": "video-publication.json"
   },
   "limits": [
     "Bounded synthetic workflow, not a general accuracy benchmark.",
