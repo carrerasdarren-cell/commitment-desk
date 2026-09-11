@@ -1,0 +1,278 @@
+{
+  "testPassed": true,
+  "asOf": "2026-09-08",
+  "mode": "live",
+  "provider": "bedrock · amazon.nova-lite-v1:0",
+  "sources": [
+    {
+      "id": "S-01",
+      "date": "2026-09-03",
+      "title": "Northline Studio — Thursday stand-up",
+      "text": "Maya will send the launch budget to the client by 2026-09-07.\nNoah owns the accessibility fixes, due 2026-09-09.\nElena will deliver the access checklist by 2026-09-04.\nOwen will confirm the kickoff time early next week; no specific date agreed.\nMaya will approve the supplier invoice by 2026-09-07."
+    },
+    {
+      "id": "S-02",
+      "date": "2026-09-04",
+      "title": "Elena — project channel",
+      "text": "The access checklist is delivered and the client has acknowledged receipt."
+    },
+    {
+      "id": "S-03",
+      "date": "2026-09-07",
+      "title": "Monday handoff",
+      "text": "Maya: supplier invoice approval is blocked until the purchase order arrives. The original deadline remains 2026-09-07.\nNoah: accessibility fixes are on track for 2026-09-09.\nOwen: kickoff time is still unconfirmed. Please don't promise a date yet."
+    }
+  ],
+  "commitments": [
+    {
+      "key": "send-launch-budget",
+      "title": "Send launch budget",
+      "owner": "Maya",
+      "dueDate": "2026-09-07",
+      "state": "open",
+      "attention": "overdue",
+      "detail": "Maya will send the launch budget to the client by 2026-09-07.",
+      "evidence": [
+        {
+          "key": "send-launch-budget",
+          "title": "Send launch budget",
+          "owner": "Maya",
+          "dueDate": "2026-09-07",
+          "state": "open",
+          "sourceId": "S-01",
+          "clearsOwner": false,
+          "clearsDueDate": false,
+          "quote": "Maya will send the launch budget to the client by 2026-09-07.",
+          "detail": "Maya will send the launch budget to the client by 2026-09-07.",
+          "sourceDate": "2026-09-03",
+          "sourceTitle": "Northline Studio — Thursday stand-up"
+        }
+      ],
+      "draft": "Hi Maya,\n\nChecking in on send launch budget, which was due 2026-09-07. Has this been completed? If it is still open, please share the next step and a revised date.\n\nThank you."
+    },
+    {
+      "key": "approve-supplier-invoice",
+      "title": "Approve supplier invoice",
+      "owner": "Maya",
+      "dueDate": "2026-09-07",
+      "state": "blocked",
+      "attention": "blocked",
+      "detail": "Supplier invoice approval is blocked until the purchase order arrives.",
+      "evidence": [
+        {
+          "key": "approve-supplier-invoice",
+          "title": "Approve supplier invoice",
+          "owner": "Maya",
+          "dueDate": "2026-09-07",
+          "state": "open",
+          "sourceId": "S-01",
+          "clearsOwner": false,
+          "clearsDueDate": false,
+          "quote": "Maya will approve the supplier invoice by 2026-09-07.",
+          "detail": "Maya will approve the supplier invoice by 2026-09-07.",
+          "sourceDate": "2026-09-03",
+          "sourceTitle": "Northline Studio — Thursday stand-up"
+        },
+        {
+          "key": "approve-supplier-invoice",
+          "title": "Approve supplier invoice",
+          "owner": "Maya",
+          "dueDate": "2026-09-07",
+          "state": "blocked",
+          "sourceId": "S-03",
+          "clearsOwner": false,
+          "clearsDueDate": false,
+          "quote": "Maya: supplier invoice approval is blocked until the purchase order arrives. The original deadline remains 2026-09-07.",
+          "detail": "Supplier invoice approval is blocked until the purchase order arrives.",
+          "sourceDate": "2026-09-07",
+          "sourceTitle": "Monday handoff"
+        }
+      ],
+      "draft": "Hi Maya,\n\nThe latest update indicates approve supplier invoice is blocked. What needs to happen next, and who can help unblock it?\n\nThank you."
+    },
+    {
+      "key": "confirm-kickoff-time",
+      "title": "Confirm kickoff time",
+      "owner": "Owen",
+      "dueDate": null,
+      "state": "unclear",
+      "attention": "clarify",
+      "detail": "Kickoff time is still unconfirmed. Please don't promise a date yet.",
+      "evidence": [
+        {
+          "key": "confirm-kickoff-time",
+          "title": "Confirm kickoff time",
+          "owner": "Owen",
+          "dueDate": null,
+          "state": "open",
+          "sourceId": "S-01",
+          "clearsOwner": false,
+          "clearsDueDate": false,
+          "quote": "Owen will confirm the kickoff time early next week; no specific date agreed.",
+          "detail": "Owen will confirm the kickoff time early next week; no specific date agreed.",
+          "sourceDate": "2026-09-03",
+          "sourceTitle": "Northline Studio — Thursday stand-up"
+        },
+        {
+          "key": "confirm-kickoff-time",
+          "title": "Confirm kickoff time",
+          "owner": "Owen",
+          "dueDate": null,
+          "state": "unclear",
+          "sourceId": "S-03",
+          "clearsOwner": false,
+          "clearsDueDate": true,
+          "quote": "Owen: kickoff time is still unconfirmed. Please don't promise a date yet.",
+          "detail": "Kickoff time is still unconfirmed. Please don't promise a date yet.",
+          "sourceDate": "2026-09-07",
+          "sourceTitle": "Monday handoff"
+        }
+      ],
+      "draft": "Hi Owen,\n\nCould you confirm the current owner, status, and agreed deadline for confirm kickoff time? The updates leave a detail unresolved.\n\nThank you."
+    },
+    {
+      "key": "accessibility-fixes",
+      "title": "Accessibility fixes",
+      "owner": "Noah",
+      "dueDate": "2026-09-09",
+      "state": "open",
+      "attention": "upcoming",
+      "detail": "Accessibility fixes are on track for 2026-09-09.",
+      "evidence": [
+        {
+          "key": "accessibility-fixes",
+          "title": "Accessibility fixes",
+          "owner": "Noah",
+          "dueDate": "2026-09-09",
+          "state": "open",
+          "sourceId": "S-01",
+          "clearsOwner": false,
+          "clearsDueDate": false,
+          "quote": "Noah owns the accessibility fixes, due 2026-09-09.",
+          "detail": "Noah owns the accessibility fixes, due 2026-09-09.",
+          "sourceDate": "2026-09-03",
+          "sourceTitle": "Northline Studio — Thursday stand-up"
+        },
+        {
+          "key": "accessibility-fixes",
+          "title": "Accessibility fixes",
+          "owner": "Noah",
+          "dueDate": "2026-09-09",
+          "state": "open",
+          "sourceId": "S-03",
+          "clearsOwner": false,
+          "clearsDueDate": false,
+          "quote": "Noah: accessibility fixes are on track for 2026-09-09.",
+          "detail": "Accessibility fixes are on track for 2026-09-09.",
+          "sourceDate": "2026-09-07",
+          "sourceTitle": "Monday handoff"
+        }
+      ],
+      "draft": "Hi Noah,\n\nChecking in on accessibility fixes, due 2026-09-09. Are we still on track, or is there anything needed to finish it?\n\nThank you."
+    },
+    {
+      "key": "deliver-access-checklist",
+      "title": "Deliver access checklist",
+      "owner": "Elena",
+      "dueDate": "2026-09-04",
+      "state": "done",
+      "attention": "done",
+      "detail": "The access checklist has been delivered and acknowledged by the client.",
+      "evidence": [
+        {
+          "key": "deliver-access-checklist",
+          "title": "Deliver access checklist",
+          "owner": "Elena",
+          "dueDate": "2026-09-04",
+          "state": "open",
+          "sourceId": "S-01",
+          "clearsOwner": false,
+          "clearsDueDate": false,
+          "quote": "Elena will deliver the access checklist by 2026-09-04.",
+          "detail": "Elena will deliver the access checklist by 2026-09-04.",
+          "sourceDate": "2026-09-03",
+          "sourceTitle": "Northline Studio — Thursday stand-up"
+        },
+        {
+          "key": "deliver-access-checklist",
+          "title": "Deliver access checklist",
+          "owner": null,
+          "dueDate": null,
+          "state": "done",
+          "sourceId": "S-02",
+          "clearsOwner": false,
+          "clearsDueDate": false,
+          "quote": "The access checklist is delivered and the client has acknowledged receipt.",
+          "detail": "The access checklist has been delivered and acknowledged by the client.",
+          "sourceDate": "2026-09-04",
+          "sourceTitle": "Elena — project channel"
+        }
+      ],
+      "draft": null
+    }
+  ],
+  "rejected": [],
+  "trace": [
+    {
+      "tool": "read_updates",
+      "phase": "started"
+    },
+    {
+      "tool": "read_updates",
+      "phase": "finished",
+      "status": "success",
+      "durationMs": 2
+    },
+    {
+      "tool": "strands_structured_output",
+      "phase": "started"
+    },
+    {
+      "tool": "strands_structured_output",
+      "phase": "finished",
+      "status": "success",
+      "durationMs": 4
+    },
+    {
+      "tool": "read_updates",
+      "phase": "started"
+    },
+    {
+      "tool": "read_updates",
+      "phase": "finished",
+      "status": "success",
+      "durationMs": 1
+    },
+    {
+      "tool": "strands_structured_output",
+      "phase": "started"
+    },
+    {
+      "tool": "strands_structured_output",
+      "phase": "finished",
+      "status": "success",
+      "durationMs": 0
+    },
+    {
+      "tool": "read_updates",
+      "phase": "started"
+    },
+    {
+      "tool": "read_updates",
+      "phase": "finished",
+      "status": "success",
+      "durationMs": 0
+    },
+    {
+      "tool": "strands_structured_output",
+      "phase": "started"
+    },
+    {
+      "tool": "strands_structured_output",
+      "phase": "finished",
+      "status": "success",
+      "durationMs": 1
+    }
+  ],
+  "generatedAt": "2026-09-10T23:02:28.294Z"
+}

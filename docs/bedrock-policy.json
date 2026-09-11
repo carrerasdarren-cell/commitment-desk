@@ -1,0 +1,12 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "InvokeNovaLiteOhio",
+      "Effect": "Allow",
+      "Action": ["bedrock:InvokeModel", "bedrock:InvokeModelWithResponseStream"],
+      "Resource": "arn:aws:bedrock:us-east-2::foundation-model/amazon.nova-lite-v1:0",
+      "Condition": {"StringEquals": {"aws:RequestedRegion": "us-east-2"}}
+    }
+  ]
+}

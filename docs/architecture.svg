@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040"><rect width="1600" height="1040" fill="#f6f4ef"/>
+<text x="60" y="62.86" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#127567">COMMITMENT DESK</text>
+<text x="60" y="121.24" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="#182d39">Evidence before the next follow-up.</text>
+<text x="60" y="166.5" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4a606b">Strands interprets the updates. Application rules reconcile them. A person approves the handoff.</text>
+<rect x="510" y="198" width="1020" height="510" rx="24" fill="#eaf0f5" stroke="#d3dfe8" stroke-width="2"/>
+<text x="540" y="226.92" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#315a84">SERVER / WORKER  ·  credentials stay here</text>
+<polyline points="420,332 560,332" fill="none" stroke="#315a84" stroke-width="3.5"/>
+<polygon points="560.0,332.0 547.1,337.5 547.1,326.5" fill="#315a84"/>
+<polyline points="990,308 1080,308" fill="none" stroke="#315a84" stroke-width="3.5"/>
+<polygon points="1080.0,308.0 1067.1,313.5 1067.1,302.5" fill="#315a84"/>
+<polyline points="1080,360 990,360" fill="none" stroke="#315a84" stroke-width="3.5"/>
+<polygon points="990.0,360.0 1002.9,354.5 1002.9,365.5" fill="#315a84"/>
+<polyline points="775,425 775,455 1280,455 1280,490" fill="none" stroke="#315a84" stroke-width="3.5"/>
+<polygon points="1280.0,490.0 1274.5,477.1 1285.5,477.1" fill="#315a84"/>
+<polyline points="1080,620 990,620" fill="none" stroke="#315a84" stroke-width="3.5"/>
+<polygon points="990.0,620.0 1002.9,614.5 1002.9,625.5" fill="#315a84"/>
+<polyline points="1080,552 1030,552 1030,395 990,395" fill="none" stroke="#315a84" stroke-width="3.5" stroke-dasharray="7 7"/>
+<polygon points="990.0,395.0 1002.9,389.5 1002.9,400.5" fill="#315a84"/>
+<polyline points="775,668 775,728 370,728 370,775" fill="none" stroke="#315a84" stroke-width="3.5"/>
+<polygon points="370.0,775.0 364.5,762.1 375.5,762.1" fill="#315a84"/>
+<polyline points="680,859 890,859" fill="none" stroke="#127567" stroke-width="3.5"/>
+<polygon points="890.0,859.0 877.1,864.5 877.1,853.5" fill="#127567"/>
+<rect x="60" y="255" width="360" height="170" rx="20" fill="#ffffff" stroke="#d6dddc" stroke-width="2"/>
+<text x="84" y="291.92" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#127567">01 / INPUT</text>
+<text x="84" y="328.38" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#182d39">Dated project updates</text>
+<text x="84" y="363.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">Source ID, date and body</text>
+<text x="84" y="393.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">Review date chosen by user</text>
+<rect x="560" y="255" width="430" height="170" rx="20" fill="#ffffff" stroke="#d6dddc" stroke-width="2"/>
+<text x="584" y="291.92" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#127567">02 / AGENT</text>
+<text x="584" y="328.38" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#182d39">Strands agent</text>
+<text x="584" y="363.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">read_updates → structured output</text>
+<text x="584" y="393.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">Real tool callbacks → activity view</text>
+<rect x="1080" y="255" width="400" height="170" rx="20" fill="#ffffff" stroke="#d6dddc" stroke-width="2"/>
+<text x="1104" y="291.92" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#127567">MODEL PROVIDER</text>
+<text x="1104" y="328.38" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#182d39">Amazon Bedrock</text>
+<text x="1104" y="363.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">Nova Lite 1.0 · us-east-2</text>
+<text x="1104" y="393.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">Scoped identity · fetch transport</text>
+<rect x="1080" y="490" width="400" height="178" rx="20" fill="#ffffff" stroke="#d6dddc" stroke-width="2"/>
+<text x="1104" y="526.92" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#127567">03 / VALIDATION</text>
+<text x="1104" y="563.38" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#182d39">Source-specific schema</text>
+<text x="1104" y="598.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">Exact quotes, owners and dates</text>
+<text x="1104" y="628.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">Bounded correction feedback</text>
+<rect x="560" y="490" width="430" height="178" rx="20" fill="#ffffff" stroke="#d6dddc" stroke-width="2"/>
+<text x="584" y="526.92" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#127567">04 / APPLICATION RULES</text>
+<text x="584" y="563.38" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#182d39">Chronological reconciliation</text>
+<text x="584" y="598.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">Completion, withdrawals, conflicts</text>
+<text x="584" y="628.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">Overdue / blocked / unclear / next</text>
+<rect x="60" y="775" width="620" height="178" rx="20" fill="#ffffff" stroke="#d6dddc" stroke-width="2"/>
+<text x="84" y="811.92" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#127567">05 / HUMAN REVIEW</text>
+<text x="84" y="848.38" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#182d39">Inspect evidence and edit the draft</text>
+<text x="84" y="883.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">Accepted event history stays attached to the item.</text>
+<text x="84" y="913.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">Unknown details and conflicts remain visible.</text>
+<rect x="890" y="775" width="590" height="178" rx="20" fill="#e9f2ef" stroke="#d6dddc" stroke-width="2"/>
+<text x="914" y="811.92" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#127567">06 / HANDOFF</text>
+<text x="914" y="848.38" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#182d39">Approve and export Markdown</text>
+<text x="914" y="883.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">A local download for a person to use.</text>
+<text x="914" y="913.68" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4a606b">No email or messages are sent.</text>
+<text x="60" y="1004.74" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#4a606b">Exact evidence matching is a constraint, not a guarantee of semantic accuracy. The current demo uses synthetic data.</text>
+</svg>
