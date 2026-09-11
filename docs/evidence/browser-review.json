@@ -1,7 +1,7 @@
 {
   "checked_at": "2026-09-11T00:37:00.422515+00:00",
   "deployed_application_commit": "4422b3dc49de0a50906690d3cdecdd331013e4b0",
-  "provider": "bedrock \u00b7 amazon.nova-lite-v1:0",
+  "provider": "bedrock · amazon.nova-lite-v1:0",
   "review_date": "2026-09-08",
   "input": "Synthetic Northline Studio example",
   "observed": {
@@ -25,8 +25,12 @@
     "export_confirmation_visible": true
   },
   "download_verification": {
-    "browser_event": "timed out after 10 seconds",
-    "file_delivery": "not independently verified"
+    "recorded_browser_event": "timed out after 10 seconds; no file independently verified at recording time",
+    "file_delivery": "verified by independent filesystem read after a later user-assisted export",
+    "followup_verified_at": "2026-09-11T01:59:17.323244+00:00",
+    "followup_evidence": "export-handoff-check.json",
+    "approved_handoff": "approved-handoff.md",
+    "same_run_as_recording": false
   },
   "demo": {
     "status": "private preview; not publicly uploaded",
@@ -37,7 +41,8 @@
   },
   "limits": [
     "Bounded synthetic workflow, not a general accuracy benchmark.",
-    "Export confirmation is not proof of file delivery.",
+    "Export confirmation alone is not proof of file delivery; a later user-assisted download was independently checked.",
+    "The later live export left the completed checklist deadline unconfirmed despite a date in its source quote; see export-handoff-check.json.",
     "This does not establish access for judges or a competition submission."
   ]
 }

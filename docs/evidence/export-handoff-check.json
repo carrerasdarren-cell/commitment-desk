@@ -1,0 +1,33 @@
+{
+  "verified_at": "2026-09-11T01:59:17.323244+00:00",
+  "review_date": "2026-09-08",
+  "input": "Synthetic Northline Studio example",
+  "deployed_application_commit": "4422b3dc49de0a50906690d3cdecdd331013e4b0",
+  "download_method": "User clicked Export handoff in the live app; assistant independently read the downloaded file.",
+  "download_modified_at": "2026-09-11T01:56:21.762309+00:00",
+  "artifact": "approved-handoff.md",
+  "artifact_sha256": "5845713bfbbe4bab3af904154afae6236568de31b8c6be75b078a13cbf9913f4",
+  "artifact_bytes": 1809,
+  "checks": {
+    "live_bedrock_nova_label": true,
+    "five_commitment_sections": true,
+    "nine_source_evidence_records": true,
+    "exactly_one_approved_draft": true,
+    "exact_approved_maya_text": true,
+    "other_commitments_have_no_followup_drafts": true,
+    "completed_checklist_has_no_followup": true,
+    "kickoff_deadline_remains_unconfirmed": true,
+    "no_send_notice_present": true
+  },
+  "observations": [
+    "The earlier downloaded file contained the deterministic example with no approved draft.",
+    "A subsequent live analysis was completed and the same approved Maya wording was restored before this manual download.",
+    "The completed checklist is correctly marked completed, but this later run exports its deadline as unconfirmed even though its source quote includes 2026-09-04."
+  ],
+  "limits": [
+    "This is a later live run, separate from the recorded browser run. The file inspection is not shown in the video.",
+    "Automated export clicks showed confirmation without producing a second filesystem download; this verifies the user-assisted download path.",
+    "Review and approval state is held in browser memory and resets on page reload or a new analysis.",
+    "The checks validate this synthetic handoff and approval boundary; they do not establish general extraction accuracy."
+  ]
+}

@@ -20,7 +20,7 @@ The hosted check finished at `2026-09-10T23:08:25.791Z` against deployed applica
 - TypeScript and authored-code lint passed.
 - Dependency audit reported zero known vulnerabilities after the Cloudflare toolchain patch update.
 - Local application returned HTTP 200; the actual Worker analysis endpoint passed the same full sample assertions.
-- The bounded live browser flow was subsequently checked as described below; downloaded-file delivery remains unverified.
+- The bounded live browser flow was subsequently checked as described below; a later user-assisted live handoff download was independently read and verified.
 - Runtime used for these checks: Node 26.0.0. Other supported Node versions have not been independently tested.
 
 ## Changes required for Nova
@@ -41,4 +41,10 @@ The release preserves optional empty binding configuration and replaces only its
 
 The live interface was exercised with the synthetic sample: the example label changed to a live Bedrock/Nova result; all five attention states appeared; the kickoff stayed undated; and the later S-02 checklist completion suppressed its draft. Editing and approving the launch budget follow-up were visible. Run activity showed three successful read tools and three successful structured-output tools, with zero rejected extractions.
 
-The export button displayed a confirmation, but the browser download event timed out and no file was found in the expected download folders. Downloaded-file delivery remains unverified. This limitation is labeled in the private 3:04 narrated demo preview. The preview uses actual browser frames with edited timing and generic synthetic narration; its full video/audio decode passed. No native Codex interface was captured. See evidence/browser-review.json. The video has not been publicly uploaded.
+The recorded export button displayed a confirmation, but its browser download event timed out and no file was independently verified at recording time. A later user-assisted download was checked separately as described below. The private 3:04 preview labels this later verification accurately; it uses actual browser frames with edited timing and generic synthetic narration. Its full video/audio decode passed. No native Codex interface was captured, and opening the downloaded file is not shown. See evidence/browser-review.json. The video has not been publicly uploaded.
+
+## Downloaded handoff verification
+
+A later live Bedrock/Nova review was exported by the user on September 10 Eastern (September 11 UTC). Independent inspection of the downloaded Markdown confirmed the live-provider label, all five commitment sections and nine source quotes, and exactly one approved draft containing the edited Maya message. The other commitments have no follow-up drafts; the completed checklist has no reminder. See `evidence/export-handoff-check.json` and the unchanged downloaded content in `evidence/approved-handoff.md`.
+
+This verifies the user-assisted download path. Automated export clicks showed a success notice without creating another file. The original sample-only download was not accepted as proof of an approved live handoff. Review and approval state is held in browser memory and resets on reload or a new analysis. In this later run, the checklist remained correctly completed but its deadline was unconfirmed despite the date in its source quote; passing earlier runs should not be interpreted as general extraction accuracy.
