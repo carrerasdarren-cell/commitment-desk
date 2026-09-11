@@ -30,7 +30,7 @@ The interface uses React, TypeScript and shadcn components. A server route runs 
 
 Each source is extracted separately. Source dates and titles remain in application logic, while the model receives the source ID, body, and previously established commitment keys and titles. A source-specific schema checks exact quotations and supplied owners and deadlines. Invalid extractions receive correction feedback within a bounded agent run. Ordinary code then reconciles chronology, completion, explicit withdrawals and conflicts.
 
-The privately hosted app runs on a Worker. The Bedrock client uses a fetch transport, and a dedicated AWS identity has only the configured Nova Lite invocation permissions. Credentials remain in server-side secrets. AgentCore is not used.
+The hosted app runs on a Worker. The Bedrock client uses a fetch transport, and a dedicated AWS identity has only the configured Nova Lite invocation permissions. Credentials remain in server-side secrets. AgentCore is not used. The public demo uses a private judge code, expiry and a durable D1 allowance of 25 total admitted reviews. D1 stores counters and lease metadata only; the code is shared in private testing instructions. Anonymous access and a live judge-mode sample passed after activation.
 
 ## Challenges we ran into
 
@@ -52,7 +52,7 @@ Agent interpretation and application rules do different jobs. A model can organi
 
 ## What's next
 
-Validate the workflow with project managers using synthetic or permissioned examples. Measure incorrect reminders and unresolved details before making time-saving claims. Expand the evaluation set, improve task matching across differently worded updates, and evaluate the protected judge access controls before wider deployment.
+Validate the workflow with project managers using synthetic or permissioned examples. Measure incorrect reminders and unresolved details before making time-saving claims. Expand the evaluation set, improve task matching across differently worded updates, and evaluate the protected judge access controls before broader production use.
 
 ## Built with
 
@@ -67,7 +67,7 @@ Started September 8, 2026 for Agents for Humans. Built with AI coding assistance
 - Public source repository: [carrerasdarren-cell/commitment-desk](https://github.com/carrerasdarren-cell/commitment-desk) — published under MIT.
 - Public demo: [Commitment Desk | Agents for Humans 2026](https://www.youtube.com/watch?v=zkPgiwAC5kY) — 3:04, published after approval. A later live export was independently verified.
 - Architecture: `architecture.svg` / `architecture.png` in this folder.
-- Judge testing access (website, functioning demo or test build): pending; the current hosted app is owner-only.
+- Judge testing access: public demo is live; the private code and walkthrough are saved in Devpost. One approved activation review passed, leaving 24 of 25 shared reviews at verification. Access expires October 8 at 8 p.m. Eastern.
 - Devpost hackathon registration: verified; a project draft exists. AWS Builder ID is verified and saved; the draft has reached 4/5 steps. Individual entrant and United States residence were confirmed by Darren.
 - Final entrant eligibility, project description and terms acceptance: Darren's review required.
 

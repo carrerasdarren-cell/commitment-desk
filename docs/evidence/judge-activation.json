@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-09-11T04:42:37.435Z",
+  "status": "active and publicly reachable",
+  "url": "https://commitment-desk-afh-2026.drc795.chatgpt.site",
+  "application_commit": "a4a23a36995421eb6573030482e1d4b886397935",
+  "deployment_id": "appgdep_6aa385e1a13c81918e81e784e196470c",
+  "environment_revision": 3,
+  "access_mode": "public",
+  "access_policy_revision": 2,
+  "judge_mode": "secret code and durable shared allowance",
+  "expires_at": "2026-10-09T00:00:00Z",
+  "approved_admitted_review_limit": 25,
+  "verification_admitted_reviews": 1,
+  "verified_used_count": 1,
+  "remaining_at_check": 24,
+  "lease_until_after_verification": 0,
+  "private_activation_check": "200; 12 seconds; five attention states; nine quotes; zero rejected events; three read and three structured-output tools",
+  "anonymous_checks": {
+    "page_status": 200,
+    "owner_cookie_or_token_used": false,
+    "availability": {
+      "liveAvailable": true,
+      "accessRequired": true
+    },
+    "missing_code_status": 401,
+    "wrong_code_status": 401,
+    "valid_code_malformed_input_status": 400
+  },
+  "propagation_note": "First anonymous request returned 403 shortly after the access change; subsequent independent root and API requests succeeded.",
+  "judge_code": "server secret; actual value omitted from this evidence",
+  "final_submission": "not performed"
+}
